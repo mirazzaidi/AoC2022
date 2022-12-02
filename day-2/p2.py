@@ -5,7 +5,11 @@ LOSE, DRAW, WIN = 0, 3, 6
 ROCK, PAPER, SCISSOR = 1, 2, 3
 
 
-winner_combo = {ROCK: PAPER, PAPER: SCISSOR, SCISSOR: ROCK}
+winner_combo = {
+    ROCK: PAPER,
+    PAPER: SCISSOR,
+    SCISSOR: ROCK,
+}
 
 loser_combo = {
     ROCK: SCISSOR,
@@ -13,9 +17,17 @@ loser_combo = {
     SCISSOR: PAPER,
 }
 
-opponent_guide = {'A': ROCK, 'B': PAPER, 'C': SCISSOR}
+opponent_guide = {
+    'A': ROCK,
+    'B': PAPER,
+    'C': SCISSOR,
+}
 
-player_guide = {'X': LOSE, 'Y': DRAW, 'Z': WIN}
+player_guide = {
+    'X': LOSE,
+    'Y': DRAW,
+    'Z': WIN,
+}
 
 total_score = 0
 

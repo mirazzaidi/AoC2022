@@ -4,9 +4,17 @@ LOSE, DRAW, WIN = 0, 3, 6
 ROCK, PAPER, SCISSOR = 1, 2, 3
 
 
-player_guide = {'X': ROCK, 'Y': PAPER, 'Z': SCISSOR}
+player_guide = {
+    'X': ROCK,
+    'Y': PAPER,
+    'Z': SCISSOR,
+}
 
-opponent_guide = {'A': ROCK, 'B': PAPER, 'C': SCISSOR}
+opponent_guide = {
+    'A': ROCK,
+    'B': PAPER,
+    'C': SCISSOR,
+}
 
 total_score = 0
 
