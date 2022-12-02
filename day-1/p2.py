@@ -17,7 +17,6 @@ def get_top_3_calories(input_file):
     return sum(calories_count[:3])
 
 
-
 if __name__ == '__main__':
     ans = get_top_3_calories('day-1/input.txt')
     print(f'Answer is {ans}')

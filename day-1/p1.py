@@ -15,7 +15,6 @@ def get_max_calories(input_file):
     return max(calories_count)
 
 
-
 if __name__ == '__main__':
     ans = get_max_calories('day-1/input.txt')
     print(f'Answer is {ans}')
