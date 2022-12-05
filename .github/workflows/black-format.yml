@@ -1,4 +1,4 @@
-name: Pylint
+name: Black
 
 on: [push]
 
@@ -18,7 +18,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install black==22.10.0
-        make lint
-    - name: Analysing the code with pylint
+        
+    - name: Analysing the code with Black
       run: |
-        pylint $(git ls-files '*.py')
+        make lint
