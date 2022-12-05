@@ -63,7 +63,6 @@ def move_stacks_by_instructions(instructions, stacks):
         for _ in range(count_items_to_move):
             item = stacks[move_from].pop()
             stacks[move_to].append(item)
-    return stacks
 
 
 def get_top_items(stacks):
@@ -77,5 +76,5 @@ if __name__ == "__main__":
     lines = read_lines()
     stacks = make_stacks(lines)
     instructions = get_instructions(lines, stacks)
-    stacks = move_stacks_by_instructions(instructions, stacks)
+    move_stacks_by_instructions(instructions, stacks)
     print(get_top_items(stacks))
