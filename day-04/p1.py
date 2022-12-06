@@ -3,9 +3,9 @@ from utils.utils import get_lines_from_file
 DEBUG = 0
 
 if DEBUG:
-    lines = get_lines_from_file('day-4/test_input.txt')
+    lines = get_lines_from_file('day-04/test_input.txt')
 else:
-    lines = get_lines_from_file('day-4/input.txt')
+    lines = get_lines_from_file('day-04/input.txt')
 count = 0
 
 from dataclasses import dataclass

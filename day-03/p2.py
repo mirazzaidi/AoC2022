@@ -3,9 +3,9 @@ from utils.utils import get_lines_from_file
 DEBUG = 0
 
 if DEBUG:
-    rucksacks = get_lines_from_file('day-3/test_input.txt')
+    rucksacks = get_lines_from_file('day-03/test_input.txt')
 else:
-    rucksacks = get_lines_from_file('day-3/input.txt')
+    rucksacks = get_lines_from_file('day-03/input.txt')
 
 lines = len(rucksacks)
 i = 0

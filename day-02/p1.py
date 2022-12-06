@@ -18,7 +18,7 @@ opponent_guide = {
 
 total_score = 0
 
-test_input = get_lines_from_file('day-2/input.txt')
+test_input = get_lines_from_file('day-02/input.txt')
 for row in test_input:
     opponent_choice, player_choice = row.split()
     score = 0

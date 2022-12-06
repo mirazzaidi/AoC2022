@@ -13,9 +13,9 @@ def get_lines_from_file(filename: str):
 
 def read_lines():
     if DEBUG:
-        lines = get_lines_from_file('day-5/test_input.txt')
+        lines = get_lines_from_file('day-05/test_input.txt')
     else:
-        lines = get_lines_from_file('day-5/input.txt')
+        lines = get_lines_from_file('day-05/input.txt')
     return lines
 
 
