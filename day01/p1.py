@@ -16,5 +16,5 @@ def get_max_calories(input_file):
 
 
 if __name__ == '__main__':
-    ans = get_max_calories('day-01/input.txt')
+    ans = get_max_calories('day01/input.txt')
     print(f'Answer is {ans}')

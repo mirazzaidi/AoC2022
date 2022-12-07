@@ -1,5 +1,6 @@
 from collections import deque
 
+
 DEBUG = 0
 
 
@@ -13,9 +14,9 @@ def get_lines_from_file(filename: str):
 
 def read_lines():
     if DEBUG:
-        lines = get_lines_from_file('day-05/test_input.txt')
+        lines = get_lines_from_file('day05/test_input.txt')
     else:
-        lines = get_lines_from_file('day-05/input.txt')
+        lines = get_lines_from_file('day05/input.txt')
     return lines
 
 
@@ -59,10 +60,12 @@ def move_stacks_by_instructions(instructions, stacks):
         count_items_to_move = int(tokens[1])
         move_from = int(tokens[3]) - 1  # zero based index
         move_to = int(tokens[5]) - 1  # zero based index
-
+        temp = deque()
         for _ in range(count_items_to_move):
             item = stacks[move_from].pop()
-            stacks[move_to].append(item)
+            temp.append(item)
+        while temp:
+            stacks[move_to].append(temp.pop())
 
 
 def get_top_items(stacks):

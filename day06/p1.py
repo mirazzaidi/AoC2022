@@ -5,12 +5,12 @@ from utils.utils import get_lines_from_file
 DEBUG = 0
 
 if DEBUG:
-    code = get_lines_from_file('day-06/test_input.txt')[0]
+    code = get_lines_from_file('day06/test_input.txt')[0]
 else:
-    code = get_lines_from_file('day-06/input.txt')[0]
+    code = get_lines_from_file('day06/input.txt')[0]
 
 char_map = defaultdict(int)
-sequence_len = 14
+sequence_len = 4
 
 assert len(code) >= sequence_len
 
