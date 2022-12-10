@@ -27,14 +27,11 @@ def get_screen():
 
     for line in lines:
         command = line.split()
-
-        if command[0] == 'noop':
+        cycle += 1
+        run_cycle(cycle, crt, sprite_pos, screen)
+        if command[0] == 'addx':
             cycle += 1
             run_cycle(cycle, crt, sprite_pos, screen)
-        else:
-            for _ in range(2):
-                cycle += 1
-                run_cycle(cycle, crt, sprite_pos, screen)
             X += int(command[1])
             sprite_pos = X
     return screen

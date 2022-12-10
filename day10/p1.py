@@ -21,14 +21,11 @@ def run_cycle(cycle, cycle_strength):
 
 for line in lines:
     command = line.split()
-
-    if command[0] == 'noop':
+    cycle += 1
+    run_cycle(cycle, cycle_strength)
+    if command[0] == 'addx':        
         cycle += 1
         run_cycle(cycle, cycle_strength)
-    else:
-        for _ in range(2):
-            cycle += 1
-            run_cycle(cycle, cycle_strength)
         X += int(command[1])
 
 print(sum(cycle_strength))
