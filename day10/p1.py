@@ -23,7 +23,7 @@ for line in lines:
     command = line.split()
     cycle += 1
     run_cycle(cycle, cycle_strength)
-    if command[0] == 'addx':        
+    if command[0] == 'addx':
         cycle += 1
         run_cycle(cycle, cycle_strength)
         X += int(command[1])
